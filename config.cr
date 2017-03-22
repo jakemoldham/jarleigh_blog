@@ -7,7 +7,7 @@ require "mysql_adapter"
 require "micrate"
 
 require "./src/macros/*"
-require "./src/jarleigh.cr"
+require "./src/controllers/*"
 
 File.read_lines(".env").each do |line|
   key, value = line.strip.split "="
