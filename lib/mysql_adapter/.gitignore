@@ -1,0 +1,7 @@
+/.deps/
+/lib/
+/.crystal/
+/doc/
+/integration/integration_spec
+/shard.lock
+/.shards

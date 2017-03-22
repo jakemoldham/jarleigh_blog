@@ -13,6 +13,14 @@ dependencies:
   slang:
     github: jeromegn/slang
     branch: master
+
+  active_record:
+    github: waterlink/active_record.cr
+    branch: master
+
+  mysql_adapter:
+    github: waterlink/mysql_adapter.cr
+    version: ~> 0.2
   
 
 development_dependencies:
