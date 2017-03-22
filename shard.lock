@@ -1,0 +1,26 @@
+version: 1.0
+shards:
+  icr:
+    github: greyblake/crystal-icr
+    commit: 898305c0787044ee5f8076d86e26ffe08c6c4e15
+
+  kemal:
+    github: kemalcr/kemal
+    commit: f4de825ab83276f6e78b98c8a7ad895cf478f412
+
+  kilt:
+    github: jeromegn/kilt
+    version: 0.3.3
+
+  radix:
+    github: luislavena/radix
+    version: 0.3.8
+
+  slang:
+    github: jeromegn/slang
+    commit: 17ee48438f9798ac0d47520c47c17bcd7e06cd93
+
+  spec-kemal:
+    github: sdogruyol/spec-kemal
+    commit: 05cc810f5f5ed890f16bcb06461000b97c625959
+
