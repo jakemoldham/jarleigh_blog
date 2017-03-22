@@ -1,0 +1,8 @@
+/.deps/
+/lib/
+.crystal/
+/shard.lock
+/.shards
+
+/.watch.out
+/.change-count
