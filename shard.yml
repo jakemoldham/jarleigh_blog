@@ -22,6 +22,14 @@ dependencies:
     github: waterlink/mysql_adapter.cr
     version: ~> 0.2
   
+  db:
+    github: crystal-lang/crystal-db
+
+  mysql:
+    github: crystal-lang/crystal-mysql
+
+  active_record:
+    github: waterlink/active_record.cr
 
 development_dependencies:
   spec-kemal:

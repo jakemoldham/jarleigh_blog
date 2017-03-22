@@ -2,7 +2,11 @@ version: 1.0
 shards:
   active_record:
     github: waterlink/active_record.cr
-    version: 1.0.5
+    commit: 961c904f1d8ae8380223896479102737da8eb3c7
+
+  db:
+    github: crystal-lang/crystal-db
+    version: 0.4.0
 
   icr:
     github: greyblake/crystal-icr
