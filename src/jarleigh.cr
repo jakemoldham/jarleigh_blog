@@ -1,7 +1,3 @@
-get "/" do |env|
-  view("site/index")
-end
-
 ws "/bradsendpoint" do |socket|
   10000.times do |sleepy|
     a, b, c, d = 1, 1, 1, 1

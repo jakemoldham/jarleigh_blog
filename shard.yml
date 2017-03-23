@@ -14,14 +14,23 @@ dependencies:
     github: jeromegn/slang
     branch: master
 
+  db:
+    github: crystal-lang/crystal-db
+    branch: master
+
   active_record:
     github: waterlink/active_record.cr
     branch: master
 
   mysql_adapter:
     github: waterlink/mysql_adapter.cr
-    version: ~> 0.2
+    branch: master
   
+  mysql:
+    github: crystal-lang/crystal-mysql
+
+  micrate:
+    github: juanedi/micrate
 
 development_dependencies:
   spec-kemal:
