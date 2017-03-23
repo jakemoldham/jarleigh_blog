@@ -7,6 +7,7 @@ require "mysql_adapter"
 
 require "./src/macros/*"
 require "./src/models/*"
+require "./src/jarleigh.cr"
 require "./src/controllers/*"
 
 File.read_lines(".env").each do |line|

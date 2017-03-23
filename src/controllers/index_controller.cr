@@ -1,3 +1,3 @@
 get "/" do |env|
-  render("src/views/site/index.slang")
+  rend "index"                   
 end
