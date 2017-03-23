@@ -1,5 +1,3 @@
-require "./config"
-
 class Post < ActiveRecord::Model
   adapter mysql
 
