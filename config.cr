@@ -4,7 +4,6 @@ require "db"
 require "mysql"
 require "active_record"
 require "mysql_adapter"
-require "micrate"
 
 require "./src/macros/*"
 require "./src/controllers/*"
