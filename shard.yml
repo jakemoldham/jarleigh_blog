@@ -29,9 +29,6 @@ dependencies:
   mysql:
     github: crystal-lang/crystal-mysql
 
-  micrate:
-    github: juanedi/micrate
-
 development_dependencies:
   spec-kemal:
     github: sdogruyol/spec-kemal
