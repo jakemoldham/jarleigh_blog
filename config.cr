@@ -13,3 +13,4 @@ File.read_lines(".env").each do |line|
   ENV[key] = value
 end
 
+Kemal.config.port = ENV.fetch("PORT", "3000").to_i
