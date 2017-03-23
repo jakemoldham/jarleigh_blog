@@ -1,4 +1,5 @@
 get "/posts" do
+  posts = Post.all
   render("src/views/posts/index.slang") 
 end
 

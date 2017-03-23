@@ -1,1 +1,3 @@
-h1 [posts here]
+- posts.each do |post|
+  h1 = post.title
+  h1 = post.body

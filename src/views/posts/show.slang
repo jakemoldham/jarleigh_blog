@@ -1,1 +1,2 @@
-h1 I AM A BLOG
+h1 = post.title
+h1 = post.body
