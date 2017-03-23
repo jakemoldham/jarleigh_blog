@@ -3,8 +3,16 @@ get "/posts" do
   render("src/views/posts/index.slang") 
 end
 
-post "/posts" do
+get "/posts/new" do
+  render("src/views/posts/new.slang")
+end
 
+post "/posts" do |env|
+  # post = Post.create
+  # post.title = env.params.url["title"]
+  # post.body = env.params.url["body"]
+  # post.update
+  env.redirect "/posts"
 end
 
 get "/posts/:id" do |env|
