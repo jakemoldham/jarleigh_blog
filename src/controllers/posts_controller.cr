@@ -8,8 +8,8 @@ get "/posts/new" do
 end
 
 post "/posts" do |env|
-  title = env.params.json["title"].as(String)
-  body = env.params.json["title"].as(String)
+  title = env.params.body["title"].as(String)
+  body = env.params.body["title"].as(String)
   post = Post.create({ "title" => "#{title}",
                         "body" => "#{body}",
                      })
