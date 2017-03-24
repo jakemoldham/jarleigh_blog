@@ -1,6 +1,7 @@
 # Watches your main kemal app
 guard "kemal", path: ".", file: "app.cr" do
   watch("src/jarleigh.cr")
+  watch(%r{src/controllers/.*\.cr})
   watch(%r{src/.*\.slang})
 end
 

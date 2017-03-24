@@ -1,5 +1,5 @@
 ws "/bradsendpoint" do |socket|
-  10000.times do |sleepy|
+  10000.times do
     a, b, c, d = 1, 1, 1, 1
     100.times do 
       sleep 1.0/85.0
