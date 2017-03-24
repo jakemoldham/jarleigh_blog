@@ -10,4 +10,3 @@ macro view(path)
     render "#{__DIR__}/views/#{{{path}}}.slang", "#{__DIR__}/views/layouts/layout.slang"
   {% end %}
 end
-
