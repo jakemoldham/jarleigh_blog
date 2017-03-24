@@ -1,5 +1,5 @@
 h1 Write a new post!
-form action="/posts" method="post"
-  input id="title" name="Title" placeholder="title"
-  input id="body" name="Body" placeholder="body"
+form action="/posts/create" method="get"
+  input type="text" name="title" placeholder="title"
+  input type="text" name="body" placeholder="body"
   input type="submit" value="Send"

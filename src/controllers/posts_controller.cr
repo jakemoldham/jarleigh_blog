@@ -1,30 +1,31 @@
 get "/posts" do
   posts = Post.all
-  render("src/views/posts/index.slang") 
+  rend "posts/index"
 end
 
 get "/posts/new" do
-  render("src/views/posts/new.slang")
+  rend "posts/new"
 end
 
-post "/posts" do |env|
-  # post = Post.create
-  # post.title = env.params.url["title"]
-  # post.body = env.params.url["body"]
-  # post.update
+get "/posts/create" do |env|
+  post = Post.create({ "title" => "#{env.params.query["title"].to_s}",
+                        "body" => "#{env.params.query["body"].to_s}",
+                    })
   env.redirect "/posts"
 end
 
 get "/posts/:id" do |env|
   id = env.params.url["id"]
   post = Post.get(id)
-  render("src/views/posts/show.slang")
+  rend "posts/show" 
 end
 
 put "/posts/:id" do
 
 end
 
-delete "/post/:id" do
-
+delete "/post/:id" do |env|
+  id = env.params.url["id"]
+  post = Post.get(id)
+  post.delete
 end

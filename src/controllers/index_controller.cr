@@ -1,3 +1,3 @@
 get "/" do |env|
-  rend "index"                   
+  rend "site/index"                   
 end

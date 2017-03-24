@@ -1,3 +1,3 @@
 macro rend(filename)
-  render "src/views/site/#{{{filename}}}.slang", "src/views/layouts/layout.slang"
+  render "src/views/#{{{filename}}}.slang", "src/views/layouts/layout.slang"
 end
