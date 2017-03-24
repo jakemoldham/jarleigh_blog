@@ -1,5 +1,5 @@
-macro rend(filename)
-  render "src/views/#{{{filename}}}.slang", "src/views/layouts/layout.slang"
+macro rend(filename, folder = __FILE__)
+  render "./src/views/#{{{folder.split("/").last.gsub(/\_controller\.cr/, "")}}}/#{{{filename}}}.slang", "src/views/layouts/layout.slang"
 end
 
 macro get_param(param)
