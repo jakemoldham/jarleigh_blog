@@ -1,10 +1,10 @@
 get "/posts" do
   posts = Post.all
-  rend "index"
+  rend("index", "posts")
 end
 
 get "/posts/new" do
-  rend "new"
+  rend("new", "posts")
 end
 
 get "/posts/create" do |env|
@@ -17,12 +17,12 @@ end
 get "/posts/:id" do |env|
   id = env.params.url["id"]
   post = Post.get(id)
-  rend "show" 
+  rend("show", "posts")
 end
 
 get "/post/edit/:id" do |env|
   post = Post.get(env.params.url["id"])
-  rend "posts/edit"
+  rend("edit", "posts")
 end
 
 get "/posts/update/:id" do |env|
