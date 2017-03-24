@@ -1,3 +1,7 @@
 - posts.each do |post|
   a href="/posts/#{post.id}"
     = post.title
+  a href="/post/edit/#{post.id}"
+    = "edit"
+  br
+
