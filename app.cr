@@ -1,3 +1,3 @@
-Require "./config"
+require "./config"
 
 Kemal.run
