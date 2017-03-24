@@ -3,5 +3,7 @@
     = post.title
   a href="/post/edit/#{post.id}"
     = "edit"
+  a href="/posts/delete/#{post.id}"
+    = "delete"
   br
 
