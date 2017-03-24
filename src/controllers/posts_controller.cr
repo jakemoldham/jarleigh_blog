@@ -7,10 +7,12 @@ get "/posts/new" do
   rend("new", "posts")
 end
 
-get "/posts/create" do |env|
-  post = Post.create({ "title" => "#{env.params.query["title"].to_s}",
-                        "body" => "#{env.params.query["body"].to_s}",
-                    })
+post "/posts" do |env|
+  title = env.params.json["title"].as(String)
+  body = env.params.json["title"].as(String)
+  post = Post.create({ "title" => "#{title}",
+                        "body" => "#{body}",
+                     })
   env.redirect "/posts"
 end
 
