@@ -8,6 +8,7 @@
 /.crystal
 /.shards
 /bin/app
+app
 
 # Ruby stuff to ignore
 /.bundle
