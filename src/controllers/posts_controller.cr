@@ -33,9 +33,10 @@ get "/posts/update/:id" do |env|
   env.redirect "/posts/#{env.params.url["id"]}"
 end
 
-delete "/post/:id" do |env|
+get "/posts/delete/:id" do |env|
   id = env.params.url["id"]
   post = Post.get(id)
   post.delete
+  env.redirect "/posts"
 end
 
