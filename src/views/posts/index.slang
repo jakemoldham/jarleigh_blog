@@ -1,3 +1,7 @@
 - posts.each do |post|
-  h1 = post.title
-  h1 = post.body
+  a href="/posts/#{post.id}"
+    = post.title
+  a href="/post/edit/#{post.id}"
+    = "edit"
+  br
+

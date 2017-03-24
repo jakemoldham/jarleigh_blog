@@ -20,8 +20,17 @@ get "/posts/:id" do |env|
   rend "posts/show" 
 end
 
-put "/posts/:id" do
+get "/post/edit/:id" do |env|
+  post = Post.get(env.params.url["id"])
+  rend "posts/edit"
+end
 
+get "/posts/update/:id" do |env|
+  post = Post.get(env.params.url["id"])
+  post.title = env.params.query["title"].to_s
+  post.body = env.params.query["body"].to_s
+  post.update
+  env.redirect "/posts/#{env.params.url["id"]}"
 end
 
 delete "/post/:id" do |env|
