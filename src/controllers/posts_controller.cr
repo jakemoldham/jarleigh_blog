@@ -58,5 +58,4 @@ delete "/post/delete/:id" do |env|
   id = env.params.url["id"]
   post = Post.get(id)
   post.delete
->>>>>>> Stashed changes
 end
