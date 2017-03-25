@@ -7,3 +7,5 @@
     = "delete"
   br
 
+a href="/posts/new"
+  h1 NEW POST
