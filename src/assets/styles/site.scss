@@ -1,7 +1,74 @@
 @import "bootstrap";
 
-$black: #111111;
+$blue: #354052;
+$white: #ffffff;
+$orange: #fb502e;
 
 body {
-  color: blue;
+  color: #acacac;
+  background-color: #f2f2f2;
+}
+
+.index-nav {
+  height: 100px;
+  width: 100%;
+  background-color: $blue;
+  h1 {
+    color: $white;
+    text-align: center;
+    padding-top: 25px;
+  } 
+}
+.welcome-statement h4 {
+  color: $blue;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: $white;
+  padding-top: 39px;
+  margin: 0;
+}
+
+.card {
+  width: 367px;
+  height: 500px;
+  margin-top: 50px;
+  background-color: $white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  .title {
+    color: $blue;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+  } .description {
+    padding-top: 30px;
+    width: 80%;
+    margin: 0 auto;
+  } .posts-show-btn {
+    width: 50%;
+    height: 40px;
+    margin-left: 83px;
+    background-color: $orange;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 15px;
+  } .posts-link {
+    text-align: center;
+    color: $white;
+    padding-top: 6px;
+    font-size: 19px;
+  }
+}
+
+
+.jarleigh-footer {
+  padding-top: 25px;
+  width: 100%;
+  height: 100px;
+  color: $blue;
+  text-align: center;
+  background-color: $white;
+  position: fixed;
+  bottom: 0;
 }
