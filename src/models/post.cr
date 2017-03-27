@@ -4,4 +4,7 @@ class Post < ActiveRecord::Model
   primary id                 : Int
   field title                : String
   field body                 : String
+  field author               : String
+  field description          : String
+  field spotlight            : Bool
 end
