@@ -9,6 +9,12 @@ html
     meta name="apple-mobile-web-app-capable" content="yes"
     meta name="apple-mobile-web-app-status-bar-style" content="black"
     link rel="stylesheet" type="text/css" href="/stylesheets/site.css"
+    link rel="stylesheet" href="/assets/styles/stylesheets/highlightjs/styles/default.css"
+    script src="/assets/scripts/highlight.pack.js"
+    javascript:
+      hljs.initHighlightingOnLoad();
+
+
   
   body
     == content
