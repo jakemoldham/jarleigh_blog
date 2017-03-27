@@ -12,9 +12,13 @@ end
 # Create
 post "/posts" do |env|
   title = env.params.body["title"].as(String)
-  body = env.params.body["title"].as(String)
+  body = env.params.body["body"].as(String)
+  author = env.params.body["author"].as(String)
+  description = env.params.body["description"].as(String)
   post = Post.create({ "title" => "#{title}",
                         "body" => "#{body}",
+                        "author" => "#{author}",
+                        "description" => "#{description}"
                      })
   env.redirect "/posts"
 end

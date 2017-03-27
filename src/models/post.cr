@@ -5,7 +5,6 @@ class Post < ActiveRecord::Model
   field title                : String
   field body                 : String
   field author               : String
-  field body                 : String
   field description          : String
-  field spotlight            : Int
+  field spotlight            : Bool
 end

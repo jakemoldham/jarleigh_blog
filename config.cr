@@ -4,6 +4,7 @@ require "db"
 require "mysql"
 require "active_record"
 require "mysql_adapter"
+require "markdown"
 
 require "./src/macros/*"
 require "./src/models/*"

@@ -9,9 +9,16 @@ html
     meta name="apple-mobile-web-app-capable" content="yes"
     meta name="apple-mobile-web-app-status-bar-style" content="black"
     link rel="stylesheet" type="text/css" href="/stylesheets/site.css"
+    link rel="stylesheet" type="text/css" href="/stylesheets/styles/default.css"
+
+    /* javascript: */
+    /*   hljs.initHighlightingOnLoad(); */
+
+
   
   body
     == content
     == render "./src/views/layouts/_footer.slang"
 
     script type="text/javascript" href="/javascripts/site.js"
+    script type="text/javascript" href="/scripts/highlight.pack.js"
