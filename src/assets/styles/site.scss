@@ -1,8 +1,10 @@
-@import "bootstrap";
-
 $blue: #354052;
 $white: #ffffff;
 $orange: #fb502e;
+
+@import "bootstrap";
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css");
+@import "posts";
 
 body {
   color: #acacac;
@@ -13,12 +15,15 @@ body {
   height: 100px;
   width: 100%;
   background-color: $blue;
+  text-align: center;
   h1 {
     color: $white;
-    text-align: center;
+    display: inline-block;
     padding-top: 25px;
+    margin: 0;
   } 
 }
+
 .welcome-statement h4 {
   color: $blue;
   height: 100px;
@@ -53,11 +58,33 @@ body {
     border-radius: 5px;
     position: absolute;
     bottom: 15px;
+    a:hover {
+      text-decoration: none;
+    }
   } .posts-link {
     text-align: center;
     color: $white;
     padding-top: 6px;
     font-size: 19px;
+  }
+}
+
+
+.index-posts {
+  h1 {
+    color: $blue; 
+    margin: 80px 0 40px 0;
+    text-align: center;
+  } .post-list {
+    margin-bottom: 150px;
+    text-align: center;
+    a {
+      color: $blue;
+      margin: 10px 20px;
+      &:hover {
+        color: $orange;
+      }
+    } 
   }
 }
 
@@ -71,4 +98,5 @@ body {
   background-color: $white;
   position: fixed;
   bottom: 0;
+  border-top: 1px solid #f2f2f2;
 }

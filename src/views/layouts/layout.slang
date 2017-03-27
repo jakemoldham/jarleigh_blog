@@ -12,4 +12,6 @@ html
   
   body
     == content
+    == render "./src/views/layouts/_footer.slang"
+
     script type="text/javascript" href="/javascripts/site.js"
