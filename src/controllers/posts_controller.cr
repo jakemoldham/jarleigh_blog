@@ -7,7 +7,7 @@ get "/posts/new" do
   rend "new"
 end
 
-get "/posts/create" do |env|
+post "/posts" do |env|
   post = Post.create({ "title" => "#{env.params.query["title"].to_s}",
                         "body" => "#{env.params.query["body"].to_s}",
                     })
