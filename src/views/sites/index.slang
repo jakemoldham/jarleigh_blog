@@ -25,3 +25,8 @@
         - posts.each do |post|
           a href="/posts/#{post.id}"
             = post.title
+pre
+  code
+    | def hello
+    | end
+.dah style="margin-bottom: 100px"
