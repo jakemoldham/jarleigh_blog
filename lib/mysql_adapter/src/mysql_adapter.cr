@@ -120,12 +120,14 @@ module MysqlAdapter
     end
 
     def extract_fields(row)
-      fields = {} of String => ActiveRecord::SupportedType
+      fields = {} of String => ActiveRecord::SupportedType | String
 
       self.fields.each_with_index do |name, index|
         value = row[index]
         if value.is_a?(ActiveRecord::SupportedType)
           fields[name] = value
+        elsif value.is_a?(Slice(UInt8))
+          fields[name] = String.new(value)
         elsif !value.is_a?(Nil)
           puts "Encountered unsupported type: #{value.class}, of type: #{typeof(value)}"
         end
