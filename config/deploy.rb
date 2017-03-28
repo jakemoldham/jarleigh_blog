@@ -2,13 +2,13 @@
 lock '3.6.1'
 
 set :application, 'jarleigh'
-set :repo_url, 'git@github.com:me/jarleigh.git'
+set :repo_url, 'git@github.com:jakemoldham/jarleigh.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/jarleigh
-set :deploy_to, "/var/www/#{fetch(:application)}"
+set :deploy_to, "/home/deploy/www/#{fetch(:application)}"
 
 # Default value for :scm is :git
 # set :scm, :git
