@@ -9,16 +9,11 @@ html
     meta name="apple-mobile-web-app-capable" content="yes"
     meta name="apple-mobile-web-app-status-bar-style" content="black"
     link rel="stylesheet" type="text/css" href="/stylesheets/site.css"
-    link rel="stylesheet" type="text/css" href="/stylesheets/styles/default.css"
+    link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/default.min.css"
+    script src="/javascripts/application.js"
 
-    /* javascript: */
-    /*   hljs.initHighlightingOnLoad(); */
-
-
-  
   body
     == content
     == render "./src/views/layouts/_footer.slang"
 
-    script type="text/javascript" href="/javascripts/site.js"
-    script type="text/javascript" href="/scripts/highlight.pack.js"
+    <script>hljs.initHighlightingOnLoad();</script>

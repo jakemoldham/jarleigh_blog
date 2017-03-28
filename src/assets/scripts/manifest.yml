@@ -2,3 +2,4 @@
 # They will be compiled in to a single application.js file
 files:
   - site.es6
+  - highlight.pack.js

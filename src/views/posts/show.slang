@@ -8,4 +8,4 @@
     p Written by: 
       | #{post.author}
     .post-desc = post.description
-    .post-body = post.body
+    .post-body == Markdown.to_html(post.body.to_s)
